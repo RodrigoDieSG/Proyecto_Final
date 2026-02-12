@@ -14,5 +14,13 @@
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoDieSG/Proyecto_Final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RodrigoDieSG/Proyecto_Final/issues"
+  },
+  "homepage": "https://github.com/RodrigoDieSG/Proyecto_Final#readme"
 }
