@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- DEFINICIÓN DE VARIABLES GLOBALES (LO QUE FALTABA) ---
+    // --- DEFINICIÓN DE VARIABLES GLOBALES ---
     // Buscamos los elementos en el HTML por su ID para usarlos más abajo
     const contactForm = document.getElementById('contact-form');
     const successMsg = document.getElementById('form-success');
