@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (txtElement) {
         try {
-            // Añadí un try-catch por seguridad para el JSON
+            // try-catch para JSON
             const words = JSON.parse(txtElement.getAttribute('data-words'));
             const wait = parseInt(txtElement.getAttribute('data-wait'), 10);
             let txt = '';
@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             projectCards.forEach(card => {
                 if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-                    // Usamos style.display vacío para que recupere su display original (block o flex)
-                    // o 'block' si prefieres forzarlo.
+                    
+                    
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
@@ -71,8 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 3. CONEXIÓN CON LA API EXPRESS (OPTIMIZADA) ---
-    // Ahora 'contactForm' ya existe porque lo declaramos arriba
+    // --- 3. CONEXIÓN CON LA API EXPRESS ---
     if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
